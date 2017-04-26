@@ -3,8 +3,8 @@
     "homepage": "https://www.wowza.com",
     "autoload": {
         "psr-4": {
-            "com\\wowza\\": "lib/",
-            "files": ["include/config.php"]
-        }
+            "com\\wowza\\": "lib/"
+        },
+        "files": ["include/config.php"]
     }
 }
