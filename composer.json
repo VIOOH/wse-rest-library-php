@@ -6,6 +6,5 @@
         "psr-4": {
             "com\\wowza\\": "lib/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
