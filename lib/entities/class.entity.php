@@ -28,7 +28,8 @@ abstract class Entity{
 	}
 
 	public function getEntityName(){
-		$className = array_pop(explode("\\",get_class($this)));
+		$levels = explode("\\",get_class($this));
+		$className = array_pop($levels);
 		return lcfirst($className);
 	}
 
