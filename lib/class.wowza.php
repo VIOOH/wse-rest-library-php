@@ -6,7 +6,6 @@
 namespace com\wowza;
 use App\Core as Core;
 class Wowza{
-	const DEBUG = true;
 	const VERB_POST = "POST";
 	const VERB_GET = "GET";
 	const VERB_DELETE = "DELETE";
@@ -18,6 +17,7 @@ class Wowza{
 	private $vhostInstance = WOWZA_VHOST_INSTANCE;
 	private $username = WOWZA_USERNAME;
 	private $password = WOWZA_PASSWORD;
+	private $debug = WOWZA_DEBUG;
 
 	public function __construct(){ }
 
@@ -58,7 +58,7 @@ class Wowza{
  	}
 
  	protected function debug($str){
- 		if(self::DEBUG){
+ 		if($this->debug){
  			if(!is_string($str)){
  				$str = json_encode($str);
  			}
