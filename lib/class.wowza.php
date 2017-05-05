@@ -11,7 +11,7 @@ class Wowza{
 	const VERB_DELETE = "DELETE";
 	const VERB_PUT = "PUT";
 
-	private $useDigest = false;
+	private $useDigest = WOWZA_AUTH_DIGEST;
 	private $host = WOWZA_HOST;
 	private $serverInstance = WOWZA_SERVER_INSTANCE;
 	private $vhostInstance = WOWZA_VHOST_INSTANCE;
