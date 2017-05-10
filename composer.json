@@ -1,5 +1,5 @@
 {
-    "name": "osteel/wse-rest-library-php",
+    "name": "dynamicdo/wse-rest-library-php",
     "homepage": "https://www.wowza.com",
     "autoload": {
         "psr-4": {
